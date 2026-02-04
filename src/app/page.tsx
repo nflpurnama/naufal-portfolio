@@ -1,3 +1,5 @@
+import { Button } from "@/components/button/button";
+
 export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -9,6 +11,7 @@ export default function Home() {
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             Three years in ERP development taught me to build software with real-world consequences.
           </p>
+          <Button href="/about">About Me</Button>
         </div>
       </main>
     </div>
