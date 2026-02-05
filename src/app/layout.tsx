@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
 
 import { Navbar } from "@/components/navbar/navbar";
@@ -20,11 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html className={geistFont.className} lang="en">
-      <body
-        className="font-sans"
-      >
+      <body>
         <Navbar/>
-        {children}
+        <div className="min-h-screen flex items-end justify-center">
+          {children}
+        </div>
       </body>
     </html>
   );
