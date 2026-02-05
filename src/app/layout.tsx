@@ -22,7 +22,9 @@ export default function RootLayout({
     <html className={geistFont.className} lang="en">
       <body>
         <Navbar/>
-        {children}
+        <div className="min-h-screen flex items-end justify-center">
+          {children}
+        </div>
       </body>
     </html>
   );
